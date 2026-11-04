@@ -1,0 +1,61 @@
+{
+  "name": "aerion",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/run-node.mjs scripts/dev.ts",
+    "build": "node scripts/run-node.mjs node_modules/next/dist/bin/next build",
+    "start": "node scripts/run-node.mjs node_modules/next/dist/bin/next start --hostname 127.0.0.1",
+    "lint": "biome lint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "format": "biome format --write .",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:backup": "node scripts/run-node.mjs scripts/backup.ts",
+    "agents:acceptance": "node scripts/run-node.mjs scripts/live-agent-acceptance.ts",
+    "agents:commercial:acceptance": "node scripts/run-node.mjs scripts/live-commercial-acceptance.ts",
+    "worker": "node scripts/run-node.mjs scripts/worker.ts",
+    "evaluate": "tsx scripts/evaluate.ts",
+    "agents:doctor": "node scripts/run-node.mjs scripts/agents-doctor.ts",
+    "nvidia:probe": "node scripts/run-node.mjs scripts/nvidia-probe.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.2.0",
+    "@fontsource/ibm-plex-mono": "^5.2.0",
+    "@napi-rs/canvas": "^1.1.0",
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.118.0",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "cheerio": "^1.2.0",
+    "imapflow": "^2.10.0",
+    "ipaddr.js": "^2.5.0",
+    "lucide-react": "^0.468.0",
+    "next": "16.4.2",
+    "nodemailer": "^10.3.1",
+    "openai": "^7.43.0",
+    "pdfjs-dist": "^6.4.299",
+    "pg": "^8.23.1",
+    "postal-mime": "^4.2.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "^0.0.1",
+    "tesseract.js": "^7.0.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.2",
+    "@types/node": "^22.0.0",
+    "@types/nodemailer": "^8.0.2",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.8.0",
+    "vitest": "^5.0.5"
+  },
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.6.0"
+  }
+}

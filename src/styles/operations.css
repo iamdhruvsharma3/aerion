@@ -1,0 +1,347 @@
+.ops-view {
+  max-width: 1400px;
+  margin: auto;
+  padding: 8px 0 32px;
+}
+.ops-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  margin: 8px 0 28px;
+}
+.ops-heading h1 {
+  font-size: 36px;
+  letter-spacing: -1.6px;
+  font-weight: 450;
+  margin: 12px 0;
+}
+.ops-heading p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #71806b;
+  max-width: 580px;
+}
+.ops-heading .eyebrow {
+  font:
+    9px "IBM Plex Mono",
+    monospace;
+  letter-spacing: 1.6px;
+  color: #929e84;
+}
+.ops-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.ops-metrics article {
+  border: 1px solid #e2e8dc;
+  background: #f8faf4;
+  border-radius: 10px;
+  padding: 23px 21px;
+  min-width: 0;
+}
+.ops-metrics span {
+  font-size: 11px;
+  color: #829173;
+}
+.ops-metrics strong {
+  display: block;
+  margin: 13px 0;
+  font-size: 21px;
+  color: #395f2f;
+  font-weight: 450;
+  letter-spacing: -0.6px;
+}
+.ops-metrics small {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #819173;
+  display: block;
+}
+.ops-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+}
+.ops-card {
+  border: 1px solid #e3e8dd;
+  border-radius: 10px;
+  padding: 25px;
+  background: #fff;
+  margin-bottom: 22px;
+  min-width: 0;
+}
+.ops-card h2 {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin: 0 0 14px;
+  color: #3e5f35;
+}
+.ops-card p {
+  font-size: 12px;
+  color: #6d7d62;
+  line-height: 1.85;
+}
+.ops-card-title {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  color: #62864d;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.ops-card-title h2 {
+  margin: 0;
+}
+.ops-card-title > .text-link {
+  margin-left: auto;
+  font-size: 11px;
+}
+.ops-alert {
+  padding: 17px 0;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  border-top: 1px solid #edf0e8;
+}
+.ops-alert strong {
+  color: #586f45;
+  font-size: 12px;
+  font-weight: 500;
+}
+.ops-alert p {
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 8px 0 0;
+}
+.ops-alert > div {
+  flex: 1;
+}
+.ops-alert > svg {
+  flex-shrink: 0;
+  color: #90a177;
+}
+.ops-usage {
+  margin: 22px 0;
+}
+.ops-usage > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #edf0e7;
+  padding: 12px 0;
+  font-size: 12px;
+}
+.ops-usage dt {
+  color: #7a8b6b;
+}
+.ops-usage dd {
+  margin: 0;
+  color: #476536;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+}
+.ops-card .ops-fine {
+  font-size: 10px;
+  color: #849277;
+  overflow-wrap: anywhere;
+}
+.ops-settings {
+  background: #f8faf3;
+  padding: 20px;
+  border: 1px solid #e5eadc;
+  border-radius: 8px;
+  margin-top: 18px;
+}
+.ops-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.ops-settings .field {
+  margin: 16px 0;
+}
+.ops-settings input:not([type="checkbox"]),
+.ops-settings textarea {
+  width: 100%;
+  border: 1px solid #dce4d4;
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+  color: #49633b;
+  font: inherit;
+  font-size: 12px;
+  min-width: 0;
+}
+.ops-settings label {
+  font-size: 11px;
+  color: #6e825b;
+}
+.ops-settings textarea {
+  min-height: 76px;
+  resize: vertical;
+}
+.ops-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  line-height: 1.8;
+}
+.ops-checkbox input {
+  accent-color: #6c8d55;
+  margin: 4px 0;
+}
+.ops-agents {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 22px;
+}
+.ops-agents article {
+  padding: 18px;
+  border: 1px solid #e9ede2;
+  border-radius: 7px;
+  background: #fcfdf9;
+  min-width: 0;
+}
+.ops-agents article > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.ops-agents strong {
+  font-size: 12px;
+  font-weight: 500;
+  color: #49683c;
+}
+.ops-agents small {
+  display: block;
+  font-size: 10px;
+  color: #8b997c;
+  line-height: 1.8;
+  margin-top: 11px;
+}
+.ops-agents details {
+  font-size: 11px;
+  color: #6f8459;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+.ops-agents summary {
+  cursor: pointer;
+}
+.ops-agents .text-link {
+  display: inline-flex;
+  font-size: 10px;
+  margin-top: 12px;
+  gap: 5px;
+  align-items: center;
+}
+.ops-empty {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.ops-connections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 28px;
+}
+.ops-connections > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid #edf0e8;
+  padding: 12px 0;
+  font-size: 12px;
+  color: #718263;
+}
+.ops-backup {
+  margin-top: 22px;
+  padding: 20px;
+  border: 1px solid #e4eadb;
+  background: #f8faf4;
+  border-radius: 7px;
+}
+.ops-backup > strong {
+  font-size: 13px;
+  font-weight: 500;
+  color: #546e41;
+}
+.ops-backup code {
+  display: block;
+  padding: 14px;
+  margin-top: 15px;
+  border: 1px solid #e4eadc;
+  background: #fff;
+  border-radius: 5px;
+  color: #6d8457;
+  font:
+    11px "IBM Plex Mono",
+    monospace;
+  overflow-wrap: anywhere;
+}
+.ops-notice {
+  background: #edf5e4;
+  border: 1px solid #dce9cf;
+  color: #52713e;
+  padding: 14px 18px;
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+@media (max-width: 1100px) {
+  .ops-metrics,
+  .ops-agents {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 780px) {
+  .ops-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .ops-heading {
+    align-items: flex-start;
+  }
+  .ops-heading h1 {
+    font-size: 30px;
+  }
+  .ops-heading > .button {
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 480px) {
+  .ops-metrics,
+  .ops-agents,
+  .ops-connections {
+    grid-template-columns: 1fr;
+  }
+  .ops-metrics {
+    gap: 10px;
+  }
+  .ops-metrics article {
+    padding: 18px;
+  }
+  .ops-card {
+    padding: 20px;
+  }
+  .ops-heading {
+    flex-wrap: wrap;
+  }
+  .ops-heading h1 {
+    font-size: 28px;
+  }
+  .ops-fields {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .ops-usage > div {
+    flex-wrap: wrap;
+  }
+}

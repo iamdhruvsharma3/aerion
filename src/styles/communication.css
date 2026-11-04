@@ -1,0 +1,660 @@
+.communication-workspace {
+  padding-bottom: 36px;
+}
+.communication-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 33px 36px;
+  background: #173e30;
+  border-radius: 13px;
+  color: #f4f7ed;
+  margin-bottom: 22px;
+}
+.communication-hero .eyebrow {
+  color: #b5c6a5;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+.communication-hero h1 {
+  font-size: 34px;
+  letter-spacing: -1.3px;
+  font-weight: 450;
+  line-height: 1.15;
+  max-width: 480px;
+  margin: 15px 0;
+}
+.communication-hero p {
+  font-size: 12px;
+  color: #c4d1b8;
+  line-height: 1.8;
+}
+.communication-hero-count {
+  display: flex;
+  flex-direction: column;
+  min-width: 135px;
+  border-left: 1px solid #6e8c6d;
+  padding-left: 28px;
+  gap: 8px;
+}
+.communication-hero-count strong {
+  font-size: 49px;
+  line-height: 1;
+  font-weight: 400;
+}
+.communication-hero-count span {
+  font-size: 12px;
+}
+.communication-hero-count small {
+  font-size: 10px;
+  color: #afc09d;
+  line-height: 1.6;
+}
+.communication-import {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  background: #f7faf2;
+  border: 1px solid #e5ecdc;
+  border-radius: 9px;
+  padding: 22px;
+  margin-bottom: 24px;
+}
+.communication-import > div {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 250px;
+  color: #5d8050;
+}
+.communication-import h2 {
+  font-size: 14px;
+  margin: 0 0 8px;
+  font-weight: 550;
+}
+.communication-import p {
+  color: #7f8e70;
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 500px;
+}
+.communication-import form {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.communication-file {
+  color: #6f825d;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 260px;
+}
+.communication-file input {
+  max-width: 100%;
+  font-size: 11px;
+}
+.communication-import > small {
+  flex-basis: 100%;
+  font-size: 9px;
+  color: #92a080;
+}
+.communication-layout {
+  display: grid;
+  grid-template-columns: minmax(245px, 0.72fr) minmax(0, 1.8fr);
+  gap: 22px;
+  align-items: start;
+}
+.communication-inbox-list,
+.communication-detail {
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #e4eadc;
+  border-radius: 10px;
+}
+.communication-inbox-list {
+  padding: 20px;
+}
+.communication-list-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.communication-list-top h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 550;
+  color: #566f46;
+  margin: 0;
+}
+.communication-inbox-list > .field {
+  margin-bottom: 15px;
+}
+.communication-workspace .field label {
+  font-size: 11px;
+  color: #6f805f;
+}
+.communication-workspace .field input,
+.communication-workspace .field select,
+.communication-workspace .field textarea {
+  font: inherit;
+  font-size: 12px;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #dfe6d7;
+  border-radius: 5px;
+  padding: 10px;
+  background: white;
+  color: #485e3c;
+}
+.communication-workspace .field textarea {
+  line-height: 1.8;
+  resize: vertical;
+}
+.communication-message-row {
+  display: block;
+  width: 100%;
+  padding: 18px 12px;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #edf1e6;
+  background: white;
+  cursor: pointer;
+  text-align: left;
+  color: #526f42;
+  font: inherit;
+  overflow-wrap: anywhere;
+}
+.communication-message-row.is-selected {
+  background: #f0f6e8;
+  box-shadow: inset 3px 0 #6b8e4e;
+}
+.communication-message-sender {
+  color: #899b76;
+  font-size: 10px;
+  display: block;
+  margin-bottom: 8px;
+}
+.communication-message-row > strong {
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.communication-message-row > span:last-of-type {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 11px;
+}
+.communication-message-row small {
+  font-size: 9px;
+  color: #95a284;
+}
+.communication-message-row em {
+  font-size: 9px;
+  color: #9d7e49;
+  display: block;
+  margin-top: 8px;
+  font-style: normal;
+}
+.communication-small {
+  font-size: 10px;
+  color: #8e9b7e;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.communication-empty,
+.communication-choose {
+  padding: 45px 22px;
+  text-align: center;
+  color: #8d9c7c;
+}
+.communication-empty h3,
+.communication-choose h2 {
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 1.5;
+  color: #597548;
+  margin: 18px auto 12px;
+  max-width: 330px;
+}
+.communication-empty p,
+.communication-choose p {
+  font-size: 12px;
+  line-height: 1.9;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.communication-choose {
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.communication-choose > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 32px;
+  font-size: 10px;
+}
+.communication-detail {
+  padding: 26px;
+}
+.communication-detail > header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  justify-content: space-between;
+}
+.communication-detail > header > div {
+  min-width: 0;
+}
+.communication-kicker {
+  font:
+    8px "IBM Plex Mono",
+    monospace;
+  color: #9ca98d;
+  letter-spacing: 1px;
+}
+.communication-detail h2 {
+  font-size: 22px;
+  font-weight: 450;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  margin: 13px 0 18px;
+  overflow-wrap: anywhere;
+}
+.communication-envelope {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 16px 0 23px;
+  border-top: 1px solid #edf1e6;
+  border-bottom: 1px solid #edf1e6;
+  padding: 22px 0;
+}
+.communication-envelope dt {
+  font-size: 9px;
+  color: #9ba98c;
+  margin-bottom: 7px;
+}
+.communication-envelope dd {
+  margin: 0;
+  font-size: 12px;
+  color: #586f48;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.communication-routing {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  background: #f5f9ef;
+  padding: 17px;
+  border: 1px solid #e7eddd;
+  border-radius: 7px;
+  color: #6c8c55;
+}
+.communication-routing > svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.communication-routing strong {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.communication-routing p {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #849573;
+  margin: 8px 0;
+}
+.communication-routing .text-link {
+  font-size: 11px;
+}
+.communication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  align-items: center;
+  margin: 22px 0;
+}
+.communication-actions .button {
+  font-size: 11px;
+}
+.communication-actions .text-link {
+  font-size: 10px;
+}
+.communication-source {
+  border-top: 1px solid #e9efdf;
+  margin-top: 24px;
+  padding-top: 19px;
+}
+.communication-source summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #6a8655;
+  font-size: 12px;
+}
+.communication-source pre {
+  font:
+    11px / 1.9 "DM Sans Variable",
+    sans-serif;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 460px;
+  overflow: auto;
+  background: #fbfcf8;
+  border: 1px solid #eef2e6;
+  padding: 18px;
+  border-radius: 6px;
+  color: #70855c;
+  margin: 17px 0;
+}
+.communication-attachments h3,
+.communication-analysis h3,
+.communication-history h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5d7a47;
+  margin: 26px 0 13px;
+}
+.communication-attachments > div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #edf2e4;
+  padding: 13px 0;
+}
+.communication-attachments > div > span {
+  flex: 1;
+  min-width: 0;
+}
+.communication-attachments strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 450;
+  color: #607d4b;
+  overflow-wrap: anywhere;
+}
+.communication-attachments small {
+  display: block;
+  font-size: 9px;
+  color: #9ca98c;
+  margin-top: 5px;
+}
+.communication-attachments a {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 10px;
+  color: #6b8b52;
+}
+.communication-analysis article {
+  border-top: 1px solid #e7eedc;
+}
+.communication-analysis article > button {
+  border: 0;
+  background: none;
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font: inherit;
+  color: #6b8655;
+  text-align: left;
+  cursor: pointer;
+}
+.communication-analysis article > button > span:first-child {
+  margin-right: auto;
+}
+.communication-analysis strong {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+}
+.communication-analysis small {
+  font-size: 9px;
+  display: block;
+  margin-top: 5px;
+  color: #9ba88c;
+}
+.communication-revision {
+  padding: 0 0 18px;
+}
+.communication-revision p {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #7d906a;
+}
+.communication-history > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 17px 0;
+  border-top: 1px solid #e7eedc;
+  color: #6c8955;
+}
+.communication-history strong {
+  font-size: 11px;
+  font-weight: 500;
+}
+.communication-history p {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #879775;
+}
+.communication-history a {
+  font-size: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 15px 8px 0;
+  color: #62824b;
+}
+.communication-editor {
+  background: #f5f9ef;
+  border: 1px solid #dbe7cc;
+  border-radius: 7px;
+  padding: 20px;
+  margin: 19px 0;
+}
+.communication-editor > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+.communication-editor h3 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #516e3e;
+  margin: 0 0 17px;
+}
+.communication-editor p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #80936a;
+}
+.communication-editor .field {
+  margin-bottom: 17px;
+}
+.communication-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #758c60;
+  margin: 18px 0;
+}
+.communication-consent input {
+  flex-shrink: 0;
+  margin: 4px 0 0;
+  accent-color: #608745;
+}
+.communication-editor-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.communication-notice {
+  border: 1px solid #dfeccb;
+  background: #f2f7e9;
+  color: #6c8751;
+  padding: 15px 18px;
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.communication-warning {
+  border-left: 2px solid #cfad73;
+  padding-left: 13px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #9b885d;
+}
+.communication-loading {
+  padding: 35px;
+  color: #81936e;
+}
+.communication-restrictions {
+  margin-top: 26px;
+  border: 1px solid #e7ecdf;
+  border-radius: 8px;
+  padding: 21px;
+  background: white;
+}
+.communication-restrictions > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #71865b;
+  font-size: 13px;
+  cursor: pointer;
+}
+.communication-restrictions > summary > span {
+  margin-left: auto;
+  font-size: 10px;
+  color: #9caa8a;
+}
+.communication-restrictions > p {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #97a486;
+}
+.communication-restriction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #edf2e5;
+  padding: 18px 0;
+}
+.communication-restriction > div {
+  min-width: 0;
+}
+.communication-restriction strong {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6c8459;
+  overflow-wrap: anywhere;
+}
+.communication-restriction p,
+.communication-restriction small {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #94a282;
+}
+@media (max-width: 1100px) {
+  .communication-layout {
+    grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.5fr);
+    gap: 15px;
+  }
+  .communication-detail {
+    padding: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .communication-layout {
+    grid-template-columns: 1fr;
+  }
+  .communication-inbox-list {
+    max-height: 530px;
+    overflow: auto;
+  }
+  .communication-hero {
+    padding: 27px;
+    gap: 20px;
+  }
+  .communication-hero h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .communication-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+  .communication-hero-count {
+    border-left: 0;
+    border-top: 1px solid #5d7a59;
+    padding: 20px 0 0;
+    min-width: 0;
+    width: 100%;
+  }
+  .communication-hero-count strong {
+    font-size: 35px;
+  }
+  .communication-import {
+    padding: 18px;
+  }
+  .communication-import > div {
+    min-width: 0;
+  }
+  .communication-detail {
+    padding: 18px;
+  }
+  .communication-detail > header {
+    flex-wrap: wrap;
+  }
+  .communication-envelope {
+    grid-template-columns: 1fr;
+  }
+  .communication-editor {
+    padding: 17px;
+  }
+  .communication-choose > div {
+    gap: 9px;
+  }
+  .communication-restriction {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .communication-source pre {
+    padding: 14px;
+  }
+}
